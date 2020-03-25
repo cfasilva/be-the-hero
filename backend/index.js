@@ -9,4 +9,15 @@ app.get('/', (request, response) => {
     })
 })
 
+app.post('/users', (request, response) => {
+    const body = request.body
+
+    console.log(body)
+
+    return response.json({
+        evento: 'Semana Omnistack 11',
+        aluno: 'Vicente de Abreu'
+    })
+})
+
 app.listen(3333)
